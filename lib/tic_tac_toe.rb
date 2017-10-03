@@ -37,7 +37,7 @@ end
 
 # Define your play method below
 def play(board)
-  while !over(board) && !won(board) && !draw?(board)
+  while !over(board) && !won?(board) && !draw?(board)
     turn(board)
 end
 if won?(board)
