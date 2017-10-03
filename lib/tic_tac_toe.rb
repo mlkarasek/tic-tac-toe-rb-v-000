@@ -43,6 +43,9 @@ end
 if won?(board)
   puts "Congratulations"
 end
+if draw?(board)
+  puts "Cats Game!"
+end 
 
 def turn_count(board)
 	  turns = 0
