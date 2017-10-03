@@ -40,6 +40,8 @@ def play(board)
   while !over?(board) && !won?(board) && !draw?(board)
     turn(board)
 end
+if won?(board)
+  puts "Congratulations #{winnder(board)}!"
 end
 
 def turn_count(board)
