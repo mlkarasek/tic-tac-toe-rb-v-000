@@ -27,6 +27,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if !valid_move?(board, index)
+
     turn(board)
   else
     move(board, index, current_player(board))
@@ -89,12 +90,12 @@ end
 end
 
 def draw?(board)
-  if !won?(board) && !full?(board)
+  if !won?(board) && full?(board)
     true
   elsif !won?(board) && !full?(board)
     false
   else won?(board)
-    falses
+    false
   end
 end
 
