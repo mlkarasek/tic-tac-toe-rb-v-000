@@ -37,21 +37,16 @@ end
 
 # Define your play method below
 def play(board)
-   if won?
-     puts "Congratulations #{winner}!"
-   elsif draw?
-     puts "Cats Game!"
-   else
-     until over?
-       turn_count
-       if won?
-         puts "Congratulations #{winner}!"
-       elsif draw?
-         puts "Cats Game!"
-       end
-     end
-   end
- end
+  until over?(board)
+    current_player(board)
+    turn(board)
+  end
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  else
+    puts "Cats Game!"
+  end
+end
 
 
 def turn_count(board)
