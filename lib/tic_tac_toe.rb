@@ -83,8 +83,10 @@ end
 end
 
 def full?(board)
-  board.all? do |cell|
-  cell == "X" || cell == "O"
+  full = true
+    board.each_with_index do |square, index|
+      if position_taken?(index) == false
+        full = false
 end
 end
 
