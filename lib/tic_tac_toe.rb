@@ -42,7 +42,7 @@ def play(board)
    elsif draw?
      puts "Cats Game!"
    else
-     until over? 
+     until over?
        turn_count
        if won?
          puts "Congratulations #{winner}!"
