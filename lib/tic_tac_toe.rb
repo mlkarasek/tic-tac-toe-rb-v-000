@@ -41,9 +41,6 @@ def play(board)
     turn(board)
 end
 
-if !draw?(board)
-  puts "Cats Game!"
-end
 
 def turn_count(board)
 	  turns = 0
