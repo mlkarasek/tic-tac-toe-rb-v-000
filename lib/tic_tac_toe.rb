@@ -43,7 +43,7 @@ end
 
 if draw?(board)
   puts "Cats Game!"
-end 
+end
 
 def turn_count(board)
 	  turns = 0
