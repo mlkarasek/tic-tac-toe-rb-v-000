@@ -40,7 +40,7 @@ def play(board)
   while !over(board) && !won(board) && !draw?(board)
     turn(board)
 end
-
+end
 
 def turn_count(board)
 	  turns = 0
