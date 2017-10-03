@@ -84,7 +84,7 @@ end
 
 def full?(board)
   full = true
-    board.each_with_index do |square, index|
+    @board.each_with_index do |square, index|
       if position_taken?(index) == false
         full = false
 end
